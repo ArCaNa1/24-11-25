@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .view {
+            background: url('your-background-image.jpg') no-repeat center cover;
+            padding: 50px 50px 50px 0;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .bg {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px 20px 20px 0;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            position: relative;
+        }
+
+        .logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .header_content {
+            float: left;
+        }
+
+        .header_content h3 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #b50710;
+        }
+
+        .header_content p {
+            font-size: 1.1em;
+            max-width: 600px;
+        }
+
+        .contents h5 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+
+        .wrap {
+            display: flex;
+            gap: 15px;
+            overflow: hidden;
+            padding-top: 10px;
+        }
+
+        .wrap img {
+            width: calc(100% / 7);
+            height: 300px;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .wrap img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="view">
+            <div class="bg">
+                <div class="logo">
+                    <img src="netflix.png" alt="img" title="netflix">
+                </div>
+        
+                <div class="header_content">
+                    <h3>Money Heist</h3>
+                    <div class="buttons">
+                        <button>
+                            <p>Play</p>
+                        </button>
+                        <button>
+                            <p>My List</p>
+                        </button>
+                    </div>
+                    <p>To carry out the biggest heist in history, a mysterious man <br />
+                        called The Professor recruits a band of eight robbers who <br />
+                        have a single characteristic: n...
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contents">
+            <h5>NETFLIX ORIGINALS</h5>
+            <div class="wrap">
+                <img src="original1.jpg" alt="Original 1">
+                <img src="original2.jpg" alt="Original 2">
+                <img src="original3.jpg" alt="Original 3">
+                <img src="original4.jpg" alt="Original 4">
+                <img src="original5.jpg" alt="Original 5">
+                <img src="original6.jpg" alt="Original 6">
+            </div>
+            <h5>Trending Now</h5>
+            <div class="wrap">
+                <img src="trending1.jpg" alt="Trending 1">
+                <img src="trending2.jpg" alt="Trending 2">
+                <img src="trending3.jpg" alt="Trending 3">
+                <img src="trending4.jpg" alt="Trending 4">
+                <img src="trending5.jpg" alt="Trending 5">
+                <img src="trending6.jpg" alt="Trending 6">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
